@@ -1,0 +1,207 @@
+.course-section{
+  background-color: #F5F3FF;
+  height: 100%;
+}
+.course-top-section {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 0px;
+    border-bottom: 1px solid #E2DFEF;
+    .course-top-row{
+        display: flex;
+        align-items: center;
+        .course-title{
+            h4{
+                font-size: 20px;
+                span{
+                    color: #553CDF;
+                }
+            }
+        }
+    }
+}
+
+.mycourse-box{
+
+    .mycoursedate-sec{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        border: 1px solid #B3B3B3;
+        width: fit-content;
+        padding: 9px 15px;
+        border-radius: 4px;
+        margin-left: auto;
+        h2{
+            font-size: 16px;
+        }
+    }
+}
+.coursetable-title{
+    font-weight: 600;
+    font-size: 30px;
+    margin: 23px 0px !important;
+}
+
+.coursetable {
+    .table-wrapper {
+        border-radius: 10px;
+        box-shadow: none;
+
+      .table-header {
+        background-color: #E2DFEF;
+
+        th {
+          font-size: 18px;
+          font-weight: 600;
+          font-family: "Urbanist";
+          color: #000;
+          padding: 20px 16px;
+  
+          &:first-child{
+            max-width: 80px;
+          }
+        }
+      }
+      .table-body {
+        td {
+          font-size: 18px;
+          font-weight: 500;
+          font-family: "Urbanist";
+          padding: 10px 10px;
+          color: #000000;
+  
+          [class*="status-"] {
+            font-weight: 600;
+            background-color: #F26C13;
+            color: #fff;
+            display: inline-block;
+            padding: 4px 16px;
+            border: none;
+            border-radius: 50px;
+          }
+          .status-panding{
+            background-color: #F26C13;
+            color: #fff;
+          }
+          .status-active{
+            background-color: #12AD46;
+            color: #fff;
+          }
+          .session-image-wrapper {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            .session-image-inner {
+              width: 80px;
+              img {
+                max-width: 100%;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  }
+
+
+  .final-ass-wrapper{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+
+
+    .final-ass-btn{
+        border: 1px solid #553CDF;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 10px;
+    }
+  }
+
+  .final-ass-btn-active{
+    border: none;
+    color: #fff !important;
+    background-color: #553CDF !important;
+    font-size: 14px !important; 
+    font-weight: 500 !important;
+    padding: 6px 16px !important;
+  }
+
+  .final-ass-btn-deactive{
+    border: 1px solid #553CDF80 !important;
+    color: #553CDF80 !important;
+    background-color: transparent !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 6px 16px !important;
+  }
+  @media (max-width: 1199px) {
+    .course-title {
+      padding-left: 0;
+  }
+  .mycourse-box {
+    padding-right: 0px;
+}
+  }
+  @media (max-width: 767px) {
+  .course-top-section .course-top-row {
+    justify-content: space-between;
+  }
+  .course-top-section .course-top-row:before,  .course-top-section .course-top-row:after{
+    display: none;
+  }
+  .course-title {
+    padding-left: 0;
+}
+.course-top-section .course-top-row .course-title h4 {
+  font-size: 17px;
+}
+.mycourse-box .mycoursedate-sec {
+  gap: 7px;
+  padding: 9px 8px;
+}
+  }
+  @media (max-width: 480px) {
+    .profileName {
+      display: none;
+    }
+    .mycourse-box .mycoursedate-sec h2 {
+      font-size: 13px;
+    }
+    .mycourse-box .mycoursedate-sec {
+      gap: 5px;
+      padding: 5px 5px;
+    
+    }
+    .course-top-section .course-top-row .course-title h4 {
+      font-size: 15px;
+    }
+    .mycourse-box .mycoursedate-sec img {
+      width: 15px;
+  }
+  .course-title {
+    padding-left: 0;
+}
+.mycourse-box {
+  padding-right: 0;
+}
+    }
+
+    @media (max-width: 414px) {
+    .course-top-section .course-top-row{
+      flex-direction: column;
+    }
+    .course-title , .mycourse-box  {
+      align-self: flex-start;
+      margin-bottom: 10px;
+      padding-left: 0px;
+  }
+
+
+  }

@@ -1,0 +1,191 @@
+.menu-wrapper {
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    &:hover{
+      font-weight: 600;
+  }
+    &:hover {
+      color: var(--dangerColor);
+    }
+    &.active {
+      color: var(--dangerColor);
+      font-weight: 700;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+header {
+  box-shadow: none !important;
+  background-color: #ffffff !important;
+  color: #565D6D;
+}
+.header-logo{
+  cursor: pointer;
+}
+.menu-wrapper {
+    justify-content: center;
+    gap: 2px;
+    flex-grow: 1;
+  .MuiMenuItem-root  {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #000;
+      cursor: pointer;
+      &:hover{
+          font-weight: 600;
+          color: #553CDF;
+          background-color: transparent;
+      }
+  }
+}
+.profileName {
+  font-size: 20px !important;
+  span{
+    color:#553cdf;
+    font-size: 20px !important;
+  }
+}
+
+.menu-wrapper {
+  
+  .selected-Courses {
+    color: #553cdf; // Or any color you prefer
+    font-weight: 600;
+  }
+
+  .selected-Evaluate {
+    color: #553cdf;
+    font-weight: 600;
+  }
+
+  .selected-Events {
+    color: #553cdf;
+    font-weight: 600;
+  }
+}
+.header-search-wrapper{
+ display: flex;
+  align-items: center;
+   gap: 2px;
+   
+}
+.logout-sec{
+   flex-grow: 0;
+}
+
+.toggle-button {
+  display: none; /* Initially hide the toggle button */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+.header-inner-wr {
+  justify-content: space-between;
+}
+
+
+@media (max-width: 1199px) {
+  .course-top-section .course-top-row {
+    margin: 0;
+  }
+}
+@media (max-width: 900px) {
+  .menu-wrapper{
+    display: flex !important;
+  }
+}
+  
+@media (max-width: 767px) {
+  .header-logo {
+    order: 2;
+}
+.header-search-wrapper{
+  order: 3;
+}
+.menu-wrapper {
+  display: block !important;
+}
+  .toggle-button {
+    // display: block; /* Display the toggle button on smaller screens */
+    background: transparent;
+        border: currentColor;
+        display: flex;
+        padding: 5px;
+        color: #000;
+        font-size: 20px;
+  }
+
+  .menu {
+    display: none; /* Hide the menu by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .menu.show-menu {
+    display: block;
+      background: #fff;
+      position: absolute;
+      top: 100%;
+      z-index: 9;
+      box-shadow: 0px 10px 3px rgba(0, 0, 0, 0.2);
+}
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+
+
+  .header-logo{
+    img{
+      max-width: 140px;
+    }
+  }
+
+  .menu-wrapper {
+
+    .MuiMenuItem-root  {
+        font-size: 15px;
+        text-align: left;
+        margin-bottom: 0px;
+        min-height: auto;
+
+    }
+  }
+
+  .profileName {
+    font-size: 18px !important;
+    span{
+      font-size: 18px !important;
+    }
+  }
+}
+@media (max-width: 480px) {
+.profileName {
+  display: none;
+}
+
+}

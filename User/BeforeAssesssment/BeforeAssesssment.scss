@@ -1,0 +1,92 @@
+.before-assesment-main{
+    padding: 40px 0;
+    min-height: calc(100vh - 7vh);
+    background-color: #F5F3FF;
+    .heading{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .ass-wrapper{
+  
+        .ass-box{
+            background-color: white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            height: 100%;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            .ass-img-wrapper {
+                width: 70px;
+                height: 70px;
+                background: #553cdf4d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin: auto auto 15px auto;
+                transition: all 0.4s ease-in-out;
+                svg {
+                    width: 40px;
+                    *{
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+            }
+            &:hover{
+                .ass-img-wrapper{
+                    background-color: #553cdf;
+                    svg {
+                        path {
+                            fill: #ffffff;
+                        }
+                        g {
+                            rect {
+                                fill: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .test-text{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .asses-heading{
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .asses-subheading{
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 5px;
+            }
+        }
+        &:hover {
+            .ass-box {
+                opacity: 1;
+                &:not(:hover) {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    .link-title{
+        font-size: 21px;
+        font-weight: 600;
+    }
+    .link-sub-text{
+        font-size: 16px;
+    }
+    .start-asses-btn {
+
+        button{
+            background: rgb(133,111,255);
+            background: linear-gradient(180deg, rgba(133,111,255,1) 0%, rgba(85,60,223,1) 100%);
+            text-transform: capitalize;
+            padding: 12px 20px;
+            font-size: clamp(14px, 4vw, 16px);
+        }
+    } 
+}
+

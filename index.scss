@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+$primaryColor: #553cdf;
+$lightBlackColor: #323743;
+$headingColor: #282828;
+$whiteColor: #ffffff;
+$whiteLigthColor: rgba(255, 255, 255, 0.7);
+$borderColor: rgba(23, 26, 31, 0.5);
+$dangerColor: #e7242a;
+$greenColor: #59aa00;
+$inProgressColor: #FF6600;
+$Completed: #1DD75B;
+
+:root {
+  --primaryColor: #553cdf;
+  --lightBlackColor: #323743;
+  --headingColor: #282828;
+  --whiteColor: #ffffff;
+  --whiteLigthColor: rgba(255, 255, 255, 0.7);
+  --borderColor: rgba(23, 26, 31, 0.5);
+  --dangerColor: #e7242a;
+  --greenColor: #59aa00;
+  --inProgressColor: #FF6600;
+  --Completed: #1DD75B;
+}
+
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("./Fonts/AbhayaLibre/AbhayaLibre-Bold.woff2") format("woff2"),
+    url("./Fonts/AbhayaLibre/AbhayaLibre-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("./Fonts/AbhayaLibre/AbhayaLibre-Medium.woff2") format("woff2"),
+    url("./Fonts/AbhayaLibre/AbhayaLibre-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("./Fonts/AbhayaLibre/AbhayaLibre-ExtraBold.woff2") format("woff2"),
+    url("./Fonts/AbhayaLibre/AbhayaLibre-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("./Fonts/AbhayaLibre/AbhayaLibre-Regular.woff2") format("woff2"),
+    url("./Fonts/AbhayaLibre/AbhayaLibre-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("./Fonts/AbhayaLibre/AbhayaLibre-SemiBold.woff2") format("woff2"),
+    url("./Fonts/AbhayaLibre/AbhayaLibre-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("./Fonts/AbrilFatface/AbrilFatface-Regular.woff2") format("woff2"),
+    url("./Fonts/AbrilFatface/AbrilFatface-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font Urbanist START */
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-ExtraBold.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-Medium.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-ExtraLight.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-Bold.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-Regular.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-Light.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-Thin.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("./Fonts/Urbanist/Urbanist-SemiBold.woff2") format("woff2"),
+    url("./Fonts/Urbanist/Urbanist-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font Urbanist END */
+
+@mixin default {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-family: "Urbanist";
+}
+
+html {
+  @include default;
+  body {
+    @include default;
+    #root {
+      @include default;
+    }
+    .app {
+      @include default;
+    }
+    .content {
+      @include default;
+    }
+  }
+}
+// #root,
+// .app,
+// .content {
+//   height: 100%;
+//   width: 100%;
+//   font-family: 'Source Sans Pro', sans-serif;
+//   font-size: 14px;
+//   font-family: 'Urbanist';
+// }
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+/* Scrollbar */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $primaryColor $borderColor;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1f345a;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #151569;
+  border-radius: 3px;
+  /* border: 1px solid #4c4d56; */
+  &:hover {
+    background: #182652;
+  }
+}
+
+.login-container {
+  margin-top: 50px;
+  background-color: #f5f5f5;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.login-image {
+  width: 80%;
+}
+
+.login-form {
+  width: 50%;
+  margin-top: 20px;
+}
+.MuiBox-root {
+  h1 {
+    margin: 0;
+    font-family: "Urbanist";
+    color: $headingColor;
+  }
+  h2 {
+    margin: 0;
+    font-family: "Urbanist";
+    color: $headingColor;
+  }
+  h3 {
+    margin: 0;
+    font-family: "Urbanist";
+    color: $headingColor;
+  }
+  h4 {
+    margin: 0;
+    font-family: "Urbanist";
+    color: $headingColor;
+  }
+  h5 {
+    margin: 0;
+    font-family: "Urbanist";
+    color: $headingColor;
+  }
+  h6 {
+    margin: 0;
+    font-family: "Urbanist";
+    color: $headingColor;
+  }
+  p {
+    &.MuiTypography-root {
+      margin: 0;
+      font-family: "Urbanist";
+    }
+  }
+}
+h1 {
+  &.MuiTypography-root {
+    font-size:  clamp(24px, 2.5vw, 40px) ;
+  }
+}
+h2 {
+  &.MuiTypography-root {
+    font-size: clamp(22px, 2.5vw, 36px);
+  }
+}
+h3 {
+  &.MuiTypography-root {
+    font-size: clamp(20px, 2.5vw, 30px);
+  }
+}
+h4 {
+  &.MuiTypography-root {
+    font-size: clamp(18px, 2.5vw, 24px);
+  }
+}
+h5 {
+  &.MuiTypography-root {
+    font-size: clamp(16px, 2.5vw, 20px);
+  }
+}
+h6 {
+  &.MuiTypography-root {
+    font-size: clamp(14px, 2.5vw, 16px);
+  }
+}
+.text-danger {
+  color: $dangerColor;
+}
+button {
+  &.text-danger {
+    color: $dangerColor;
+  }
+}
+button {
+  &.btn-danger {
+    background-color: $dangerColor;
+    color: $whiteColor;
+
+    &:hover {
+      background-color: $dangerColor;
+      color: $whiteColor;
+      opacity: 0.9;
+      background-position: 0;
+    }
+  }
+  &.btn-primary {
+    background: $primaryColor;
+    color: $whiteColor;
+    text-transform: capitalize;
+    border: 1px solid $primaryColor;
+
+    &:hover {
+      border-color: $primaryColor;
+      color: $primaryColor;
+    }
+  }
+  &.btn-previous {
+    border-color: $lightBlackColor;
+    color: $lightBlackColor;
+  }
+  &.btn-large {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  &.btn-small {
+    padding: 5px 10px;
+  }
+  &.btn-round {
+    border-radius: 100px;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+.top-space {
+  padding-top: 70px;
+}
+
+.search-input {
+  width: 100%;
+  .icon-top {
+    z-index: 2;
+    color: #171a1f;
+  }
+  .MuiInputBase-root {
+    background: #f3f4f6;
+    border-radius: 6px;
+  }
+}
+
+/* Couese Component CSS START */
+.sec-space {
+  padding: 100px 0;
+  &.sec-space-top-0{
+    padding-top: 0;
+  }
+  &.sec-space-bottom-0{
+    padding-top: 0;
+  }
+}
+.course-card {
+  width: 100%;
+  height: 100%;
+  background-color: $whiteColor;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .course-card-body {
+    padding: 1.2rem;
+  }
+  .course-img-wrapper {
+    position: relative;
+    padding: 29.6% 50%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+  }
+  .course-card-title {
+    .MuiTypography-h6 {
+      font-weight: 600;
+      color: $headingColor;
+      margin-bottom: 0.7rem;
+      min-height: 51px;
+    }
+    p.MuiTypography-root {
+      font-size: 14px;
+      color: $headingColor;
+      margin-bottom: 0.7rem;
+    }
+  }
+  .course-recommended-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    .MuiTypography-root {
+      color: $primaryColor;
+
+      &:empty {
+        display: none;
+      }
+
+      &:first-child {
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 50px;
+        margin: 0;
+      }
+    }
+    &.in-progress {
+      .MuiTypography-root {
+        &:first-child {
+          color: $inProgressColor;
+          border-color: $inProgressColor;
+        }
+      }
+    }
+    &.completed {
+      .MuiTypography-root {
+        &:first-child {
+          color: $Completed;
+          border-color: $Completed;
+        }
+      }
+    }
+    .cstm-progressBar {
+      position: relative;
+      color: $inProgressColor;
+      width: 30px !important;
+      height: 30px !important;
+      &::before {
+        content: "";
+        border: 5.5px solid #d9d9d9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        z-index: -1;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+        circle {
+          stroke-width: 6px;
+          r: 19;
+        }
+      }
+    }
+  }
+}
+
+.coursetable {
+  table {
+    thead {
+      th {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Urbanist";
+        color: $headingColor;
+        padding: 12px 10px;
+
+        &:first-child{
+          max-width: 40px;
+        }
+      }
+    }
+    tbody {
+      td {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Urbanist";
+        padding: 8px 10px;
+        color: $lightBlackColor;
+
+        [class*="status-"] {
+          border: 1px solid $primaryColor;
+          color: $primaryColor;
+          display: inline-block;
+          padding: 2px 10px;
+          border-radius: 50px;
+        }
+        .status-panding{
+          border-color: $inProgressColor;
+          color: $inProgressColor;
+        }
+        .status-active{
+          border-color: $Completed;
+          color: $Completed;
+        }
+        .session-image-wrapper {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          text-decoration: none;
+          .session-image-inner {
+            width: 80px;
+            img {
+              max-width: 100%;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+/* Couese Component CSS END */
+

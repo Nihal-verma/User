@@ -1,0 +1,163 @@
+.assessment-screen{
+    background-color: #F5F3FF;
+    height: 100%;
+   
+
+    .assessment-top-heading{
+        padding-top: 40px;
+
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+          }
+    }
+
+    .select-module-dropdown{
+        margin-top: 20px;
+        width: 50%;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .module-table{
+        background-color: #fff;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        margin-top: 20px;
+
+        .table-head{
+            background-color: #EDEAFE;
+
+            .table-heading{
+
+                th{
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: left;
+                    color: #404040;
+                }
+
+                
+                
+            }
+
+        }
+
+        .table-body{
+            tr{
+                td{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    text-align: left;
+                    color: #404040;
+                    padding: 8px 16px;
+                }
+                
+            }
+
+        }
+    }
+}
+
+.non-graded-top-heading{
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+          }
+
+}
+
+.non-graded-evaluation-page{
+    background-color: #F5F3FF;
+
+    .mcq-question-wrapper{
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        width: 80%;
+
+        h5{
+            font-size: 18px;
+            font-weight: 500;
+            color: #282828;
+            line-height: 40px;
+            border-bottom: 1px solid #E5E5E5;
+            margin-bottom: 16px;
+        }
+
+        h4{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .mcq-option{
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            border: 1px solid #E5E5E5;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            width: 95%;
+            
+            .mcq-checkbox{
+                width: 26px;
+                height: 26px;
+                border-radius: 100%;
+                border: 1px solid #E5E5E5;
+                margin-right: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .msq-option-text{
+                font-size: 16px;
+                font-weight: 400;               
+                
+            }
+
+
+        }
+    }
+    
+}
+
+@media (max-width: 991px){
+    .non-graded-evaluation-page{
+
+        .mcq-question-wrapper{
+            width: 100%;
+        }
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .assessment-screen .assessment-top-heading {
+        padding-top: 30px;
+    }
+    .assessment-screen .assessment-top-heading h2 {
+        font-size: 30px;
+    }
+
+    .non-graded-top-heading{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    
+            h2{
+                font-size: 30px;
+                font-weight: 600;
+              }
+    
+    }
+}

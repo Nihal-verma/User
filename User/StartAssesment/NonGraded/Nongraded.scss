@@ -1,0 +1,241 @@
+.assesment-wrapper-ng{
+  width: 100%;
+  min-height: 100%;
+  background-color: #F5F3FF;
+}
+
+.time-duration-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+
+.assesment-tab-sec-ng .tab-header-ng {
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  background-color: var(--primaryColor);
+  counter-reset: button;
+}
+.assesment-tab-sec-ng .tab-header-ng .MuiTabs-flexContainer {
+  justify-content: center;
+  gap: 4rem;
+}
+.assesment-tab-sec-ng .tab-header-ng button{
+  color: #fff;
+  padding-left: 50px;
+
+}
+.assesment-tab-sec-ng .tab-header-ng button::before {
+  counter-increment: button;
+  content: counter(button);
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 10px;
+  color: #553cdf;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.assesment-tab-sec-ng .tab-header-ng button[aria-selected="true"]{
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+.assesment-tab-sec-ng .tab-header-ng button[aria-selected="true"]::before{
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+.assesment-tab-sec-ng .tab-header-ng .MuiTabs-indicator{
+  background-color: var(--whiteColor);
+}
+.assesment-top-heading-ng {
+  padding: 2rem 0 0.7rem 0;
+}
+.assesment-top-heading-ng .MuiTypography-root {
+  text-transform: capitalize;
+}
+.assesment-top-heading-ng h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+
+  .assesment-tab-sec-ng .tab-header-ng button{
+    color: var(--whiteLigthColor);
+    padding-left: 50px;
+
+}
+.assesment-tab-sec-ng.tab-header-ng button::before {
+    counter-increment: button;
+    content: counter(button);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    border: 1px solid var(--whiteColor);
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 26px;
+}
+.assesment-tab-sec-ng .tab-header-ng button[aria-selected="true"]{
+    color: var(--whiteColor);
+    font-weight: 700;
+}
+.assesment-tab-sec-ng .tab-header-ng button[aria-selected="true"]::before{
+    background-color: var(--whiteColor);
+    color: var(--primaryColor);
+}
+.assesment-tab-sec-ng .tab-header-ng .MuiTabs-indicator{
+    background-color: var(--whiteColor);
+}
+
+.assesment-question-wrapper-ng .assement-left-sec-ng {
+  width: calc(100% - 256px);
+}
+.assement-right-sec {
+  width: 240px;
+}
+
+  .tab-buttons-container {
+    padding-top: 10px;
+    display: flex;
+    gap: 30px; /* Adjust the value as needed for the desired spacing */
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .question-heading-wrapper-ng {
+    margin: 12px 0;
+}
+.question-heading-wrapper-ng>.MuiTypography-root{
+    font-weight: 700;
+}
+
+.tab-body-inner-ng>.MuiBox-root {
+  padding: 0;
+}
+  .mcq-question-wrapper-ng {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .mcq-question-header-ng h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: #282828;
+    line-height: 40px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 16px;
+  }
+  
+  .question-card-body-ng{
+    padding: 0px;
+  }
+  .question-card-body-ng h5{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #454545;
+  }
+  
+  .mcq-wrapper-ng .list-item-ng{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .mcq-wrapper-ng .list-item-ng .mcq-checkbox-ng{
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    border: 1px solid #E5E5E5;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .mcq-wrapper-ng .list-item-ng .mcq-option-text-ng{
+    font-size: 16px;
+    font-weight: 400;
+    color: #454545;
+  }
+  
+  .email-wrapper-ng{
+    padding-bottom: 12px;
+  }
+    
+  .mcq-checkbox-ng {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid black;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+   }
+  
+  .list-item-ng.selected .mcq-checkbox-ng {
+      border-color: #553cdf;
+      background-color: #553cdf;
+      color: white;
+  }
+  
+  .list-item-ng.selected{
+      color: #fff;
+      border-color: #553cdf;
+  }
+
+  .question-box-container-ng {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fff;
+}
+
+.question-box-ng {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #848383;
+  padding: 13px;
+  margin: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #848383;
+  border-radius: 100%;
+  flex: 0 0 auto;
+}
+
+.question-box-ng.selected {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+}
+
+@media (max-width: 767px) {
+  .question-wrapper-ng {
+    flex-direction: column-reverse !important;
+  }
+
+  .max-col-ng {
+    max-width: 100% !important;
+  }
+}

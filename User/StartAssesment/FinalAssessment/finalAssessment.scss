@@ -1,0 +1,558 @@
+.assesment-top-heading-fa h3{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+/* .assesment-inner {
+    padding: 0 1.5rem;
+} */
+.assesment-wrapper-fa{
+  width: 100%;
+  min-height: 100%;
+  background-color: #F5F3FF;
+}
+.time-duration-wrapper-fa {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.time-duration-item-fa strong{
+  color: #282828;
+  line-height: 37px;
+  font-size: 14px;
+}
+.time-duration-item-fa strong>svg {
+  transform: translateY(28%);
+  fill: var(--primaryColor);
+}
+.assesment-question-wrapper-fa {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.assesment-question-wrapper-fa .assement-left-sec-fa {
+  width: calc(100% - 256px);
+}
+.assement-right-sec-fa {
+  width: 240px;
+}
+
+.assesment-tab-sec-fa .tab-header-fa {
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  background-color: var(--primaryColor);
+  counter-reset: button;
+}
+.assesment-tab-sec-fa .tab-header-fa .MuiTabs-flexContainer {
+  justify-content: center;
+  gap: 4rem;
+}
+.assesment-tab-sec-fa .tab-header-fa button{
+  color: #fff;
+  padding-left: 50px;
+  min-width: auto;
+  max-width: fit-content;
+  display: block;
+}
+.assesment-tab-sec-fa .tab-header-fa button::before {
+  counter-increment: button;
+  content: counter(button);
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 10px;
+  color: #553cdf;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.assesment-tab-sec-fa .tab-header-fa button[aria-selected="true"]{
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+.assesment-tab-sec-fa .tab-header-fa button[aria-selected="true"]::before{
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+.assesment-tab-sec-fa .tab-header-fa .MuiTabs-indicator{
+  background-color: var(--whiteColor);
+}
+.assesment-top-heading-fa {
+  padding: 2rem 0 0.7rem 0;
+}
+.assesment-top-heading-fa .MuiTypography-root {
+  text-transform: capitalize;
+}
+.qustion-wrapper-fa .MuiFormControl-root {
+  width: 100%;
+}
+.qustion-wrapper-fa .MuiFormGroup-root {
+  flex-direction: row;
+  width: 100%;
+}
+
+.qustion-wrapper-fa .MuiFormGroup-root label.MuiFormControlLabel-root {
+  width: 100%;
+  border: 1px solid var(--borderColor);
+  margin: 10px 0 0 0;
+  border-radius: 6px;
+}
+.question-count-wrapper-fa {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.7rem;
+}
+.question-count-wrapper-fa .MuiTypography-root {
+  font-weight: 600;
+}
+
+/* .qustion-wrapper :has(.Mui-checked) label.MuiFormControlLabel-root {
+  border-color: red;
+} */
+
+/* .assesment-tab-sec .tab-body{
+  background: #e7e7e7;
+  border-radius: 0 0 10px 10px;
+} */
+.tab-body-inner-fa>.MuiBox-root {
+  padding: 0;
+}
+.time-duration-item-fa {
+  width: calc(100% - 110px);
+  background: #E4DFFF;
+  padding: 0px 1rem;
+}
+.question-list-btn-wrapper-fa ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.question-list-btn-wrapper-fa ul li {
+  padding: 0;
+  width: calc(20% - 12px);
+  justify-content: center;
+}
+.question-list-btn-wrapper-fa ul li .MuiButtonBase-root {
+  text-align: center;
+  background: var(--whiteColor);
+  padding: 0;
+  width: 100%;
+  height: 29px;
+  color: #848383;
+  border: 1px solid #848383;
+  border-radius: 50%;
+}
+.question-list-btn-wrapper-fa ul li .MuiButtonBase-root.fillup-question{
+  background-color: var(--greenColor);
+  border-color: var(--greenColor);
+  color: var(--whiteColor);
+}
+.question-list-btn-wrapper-fa ul li .MuiButtonBase-root.active-question {
+  border: 1px solid var(--primaryColor);
+}
+.question-list-btn-wrapper-fa ul li .MuiButtonBase-root .MuiTypography-root {
+  font-size: 14px;
+}
+.question-heading-wrapper-fa {
+  margin: 12px 0;
+}
+.question-heading-wrapper-fa>.MuiTypography-root{
+  font-weight: 700;
+}
+.question-card-fa {
+  background: var(--whiteColor);
+  margin-bottom: 1rem;
+}
+.question-card-fa.card-border-fa{
+  border: 1px solid #CCCCCC;
+}
+.question-card-header-fa {
+  padding: 1rem;
+  border-bottom: 1px solid #E5E5E5;
+}
+.question-card-header-fa .MuiTypography-root {
+  font-size: 14px;
+}
+.question-card-body-fa {
+  padding: 1rem;
+}
+.question-card-footer-fa {
+  padding: 1rem;
+  border-top: 1px solid #E5E5E5;
+}
+strong.MuiTypography-root {
+  font-weight: 500;
+}
+.question-card-body-fa strong{
+  color: #454545;
+  font-size: 14px;
+}
+.qustion-wrapper-fa .MuiRadio-action.Mui-checked {
+  border-color: var(--primaryColor);
+  border-width: 1px;
+}
+.qustion-wrapper-fa .radio-option-fa {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #E5E5E5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #454545;
+}
+.qustion-wrapper-fa ul.MuiList-vertical {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.qustion-wrapper-fa ul.MuiList-vertical li.MuiListItem-root {
+  padding: 0.6rem;
+  width: calc(50% - 5px);
+  margin: 0;
+}
+.qustion-wrapper-fa li.MuiListItem-root label.MuiRadio-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #454545;
+  margin: 0;
+  padding-left: 5px;
+}
+.qustion-wrapper-fa li.MuiListItem-root span.MuiRadio-icon {
+  background: transparent;
+}
+.qustion-wrapper-fa li.MuiListItem-root span.MuiRadio-radio{
+  border: none;
+}
+.qustion-wrapper-fa :has(>.Mui-checked) .MuiListItemDecorator-root .radio-option-fa{
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  border-color: var(--primaryColor);
+}
+.qustion-wrapper-fa ul.MuiList-vertical li.MuiListItem-root :has(>.Mui-checked) label.MuiRadio-label{
+  color: var(--primaryColor);
+}
+.question-card-footer-fa .MuiList-root {
+  margin: 0;
+  padding: 0;
+}
+.question-card-footer-fa .MuiList-root .MuiListItem-root {
+  padding: 0;
+}
+.question-card-footer-fa .MuiList-root .MuiListItem-root:not(:first-child){
+  margin-top: 10px;
+}
+.question-card-footer-fa .MuiList-root .MuiListItem-root .circle-box {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #848383;
+  border-radius: 50%;
+  color: #848383;
+  font-size: 14px;
+}
+.question-card-footer-fa .MuiList-root .MuiListItem-root .circle-box.active{
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.question-card-footer-fa .MuiList-root .MuiListItem-root .text-box-fa .MuiTypography-root{
+  color: #848383;
+  font-size: 12px;
+  font-weight: 700;
+}
+.qustion-wrapper-fa .MuiFormControl-root input.MuiInputBase-input {
+  width: 100%;
+  padding: 12px 1rem;
+  background: var(--white);
+  border: 1px solid #E5E5E5;
+  outline: none;
+  box-shadow: none;
+}
+.qustion-wrapper-fa .MuiFormControl-root .Mui-focused input.MuiInputBase-input{
+  border-color: var(--primaryColor);
+}
+.qustion-wrapper-fa > .MuiTextarea-root {
+  margin-top: 5px;
+}
+.qustion-wrapper-fa > .MuiTextarea-root::before{
+  box-shadow: none;
+}
+.qustion-wrapper-fa > .MuiTextarea-root.Mui-focused{
+  border-color: var(--primaryColor);
+}
+
+.question-box-container-fa {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #fff;
+}
+.question-box-fa {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #848383;
+  padding: 13px;
+  margin: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #848383;
+  border-radius: 100%;
+  flex: 0 0 auto;
+}
+
+.question-box-fa.selected-fa {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+}
+.flex-wrapper-space-between-fa{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.tab-buttons-container-fa {
+  padding-top: 10px;
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow-x: auto;
+  
+}
+
+
+.mcq-question-wrapper-fa {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.mcq-question-header-fa h5{
+  font-size: 18px;
+  font-weight: 500;
+  color: #282828;
+  line-height: 40px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 16px;
+}
+
+.question-card-body-fa{
+  padding: 0px;
+}
+
+.question-card-body-fa h5{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #454545;
+}
+
+.mcq-wrapper-fa .list-item-fa{
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.mcq-wrapper-fa .list-item-fa .mcq-checkbox-fa{
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  border: 1px solid #E5E5E5;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mcq-wrapper-fa .list-item-fa .mcq-option-text-fa{
+  font-size: 16px;
+  font-weight: 400;
+  color: #454545;
+}
+
+.email-wrapper-fa{
+  padding-bottom: 12px;
+}
+
+.text-wrapper-fa{
+  padding-bottom: 12px;
+}
+
+.record-warpper-fa{
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  .choose-audio-wrapper{
+    margin-top: 16px;
+    color: #553cdf;
+    margin-bottom: 16px;
+
+    h5{
+      font-size: 18px;
+      font-weight: 500;
+      color: #282828;
+      line-height: 40px;
+      margin-bottom: 16px;
+    }
+
+    .audio-input{
+      color: #553cdf;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      margin: -4px;
+      position: relative;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      /* File Selector Button Styles */
+      &::file-selector-button {
+        border-radius: 4px;
+        padding: 0 16px;
+        height: 40px;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid rgba(#000, 0.16);
+        box-shadow: 0px 1px 0px rgba(#000, 0.05);
+        margin-right: 16px;
+    
+        /*
+          This is a hack to change the button label. 
+          I'm hiding the default label and then 
+          manually applying the width based on 
+          updated icon and label.
+        */
+        width: 132px;
+        color: transparent;
+        
+        /*
+          Firefox doesn't support the pseudo ::before 
+          or ::after elements on this input field so 
+          we need to use the @supports rule to enable 
+          default styles fallback for Firefox.
+        */
+        @supports (-moz-appearance: none) {
+          color: var(--primary-color);
+        }
+    
+        &:hover {
+          background-color: #f3f4f6;
+        }
+    
+        &:active {
+          background-color: #e5e7eb;
+        }
+      }
+      
+      &::after {
+        position: absolute;
+        pointer-events: none;
+        top: 20px;
+        left: 40px;
+        color: #553cdf;
+        font-weight: 600;
+        content: "Upload File";
+      }
+    
+      /* Handle Component Focus */
+      &:focus-within::file-selector-button,
+      &:focus::file-selector-button {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+
+
+.mcq-checkbox-fa {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+ }
+
+.list-item-fa.selected .mcq-checkbox-fa {
+    border-color: #553cdf;
+    background-color: #553cdf;
+    color: white;
+}
+
+.list-item-fa.selected{
+    color: #fff;
+    border-color: #553cdf;
+}
+
+@media (max-width: 849px) {
+  .tab-buttons-container-fa{
+    justify-content: space-between;
+  }
+
+  .assesment-tab-sec-fa .tab-header-fa button::before {
+    display: none;
+  }
+  .assesment-tab-sec-fa .tab-header-fa button{
+    padding: 10px 16px;
+  }
+
+  .tab-arrow-btn-fa {
+    margin: 0px 24px;
+    color: #CCC4F5;
+  }
+  .tab-arrow-btn-fa svg {
+    border: 1px solid #CCC4F5;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 4px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .question-wrapper-fa {
+    flex-direction: column-reverse !important;
+  }
+
+  .max-col-fa {
+    max-width: 100% !important;
+  }
+
+  .question-box-hide{
+    display: none;
+  }
+}

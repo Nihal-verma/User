@@ -1,0 +1,152 @@
+.event-section{
+  background-color: #F5F3FF;
+  height: 100%;
+}
+.event-top-heading{
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+      h2{
+          font-size: 40px;
+          font-weight: 600;
+        }
+
+}
+
+.action-btn {
+    font-size: 12px;
+    font-weight: 400;
+    color: #553CDF;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #553CDF;
+}
+
+.card-bg{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.primary-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: #553CDF;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  .secondary-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #553CDF;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #553CDF ;
+    background-color: white;
+  }
+  
+  
+  .rbc-toolbar .secondary-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #553CDF;
+    padding: 5px 16px;
+    border-radius: 6px;
+    border: 1px solid #553CDF ;
+    background-color: white;
+  }
+  
+  .page-heading {
+    margin: 0;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #141414;
+    margin-top: 42px;
+  }
+  .coursetable-title{
+    font-weight: 600;
+    font-size: 30px;
+    margin: 23px 0px !important;
+}
+
+.coursetable {
+    .table-wrapper {
+        border-radius: 10px;
+        box-shadow: none;
+
+      .table-header {
+        background-color: #E2DFEF;
+
+        th {
+          font-size: 18px;
+          font-weight: 600;
+          font-family: "Urbanist";
+          color: #000;
+          padding: 20px 16px;
+  
+          &:first-child{
+            max-width: 60px;
+          }
+        }
+      }
+      .table-body {
+        td {
+          font-size: 18px;
+          font-weight: 500;
+          font-family: "Urbanist";
+          padding: 16px 10px;
+          color: #000000;
+  
+          [class*="status-"] {
+            font-weight: 600;
+            background-color: #F26C13;
+            color: #fff;
+            display: inline-block;
+            padding: 4px 16px;
+            border: none;
+            border-radius: 50px;
+          }
+          .status-panding{
+            background-color: #F26C13;
+            color: #fff;
+          }
+          .status-active{
+            background-color: #12AD46;
+            color: #fff;
+          }
+          .session-image-wrapper {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            .session-image-inner {
+              width: 80px;
+              img {
+                max-width: 100%;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  }
+
+  @media (max-width: 767px) {
+    .event-top-heading h2{
+      font-size: 30px;
+    }
+
+    .event-top-heading{
+      padding-top: 30px;
+    }
+}

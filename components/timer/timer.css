@@ -1,0 +1,8 @@
+.starttimer {
+    color: black;
+    font-size: 14px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
